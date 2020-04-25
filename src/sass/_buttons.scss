@@ -1,0 +1,42 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  min-height: 48px;
+  padding: 0 1.5em;
+  border: 0;
+  border-radius: $border-radius/2;
+  background-color: theme-color(primary);
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: middle;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px scale-color(theme-color(primary), $lightness: -33%);
+  }
+
+  &--small {
+    min-height: 34px;
+    padding: 0.25em 0.75em;
+    font-size: 1rem;
+  }
+
+  &__icon {
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: currentColor;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0.5rem 0;
+  padding-top: calc(30vh - 150px);
+  background-color: theme-color(background);
+  font-family: "Baloo 2", sans-serif;
+  color: $body-color;
+
+  @media (max-width: 600px) {
+    justify-content: flex-start;
+    padding-top: 10vh;
+  }
+
+  @media (max-width: 320px) {
+    padding-top: 8vh;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 120ch;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.posts {
+  min-height: 250px;
+  transition: 320ms opacity ease-in;
+  opacity: 0;
+
+  &.loaded {
+    opacity: 1;
+  }
+
+  .button {
+    margin-top: 2rem;
+  }
+}

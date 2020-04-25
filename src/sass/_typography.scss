@@ -1,0 +1,36 @@
+h1 {
+  font-size: $h1-font-size;
+  font-weight: $strong-font-weight;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  font-weight: $strong-font-weight;
+}
+
+h3 {
+  font-size: $h3-font-size;
+  font-weight: $strong-font-weight;
+}
+
+h4,
+.h4 {
+  font-size: $h4-font-size;
+  font-weight: $strong-font-weight;
+}
+
+strong {
+  font-weight: $strong-font-weight;
+}
+
+a:not(.button) {
+  color: $link-color;
+}
+
+.max-line-length {
+  max-width: 60ch;
+}
+
+.lead {
+  font-size: 1.25rem;
+}
