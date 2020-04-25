@@ -2,6 +2,8 @@
 
 > Skeleton of an HTML/Sass site that retrieves DEV posts with a Netlify function. Uses node-sass and includes Browsersync for hot reloading. Build styles are minified and autoprefixed.
 
+**[Preview default project >](https://devto-netlify-starter.netlify.app/)**
+
 The only requirements are:
 
 - A DEV profile with at least one published post
@@ -11,9 +13,12 @@ The only requirements are:
 
 1. Fork this project into your own Github repo
 2. On DEV, go to [Account Settings](https://dev.to/settings/account) and generate an API key - _keep this tab open for reference in a later step_
-3. [Login or signup for Netlify](https://www.netlify.com/) and create a new site from the new repo (_it needs to be public_)
-   - You will likely get an error of build failure until we complete the next step
-4. In your Netlify site settings, go to "Build & Deploy > Environment" and create a new variable called `DEVTO` with the value being your DEV API key
+3. [Login or signup for Netlify](https://www.netlify.com/) and create a new site from the new repo
+
+**During Netlify site setup**:
+
+- The "Build Settings" will preload from the included `netlify.toml` file so use what populates
+- Open the "Advanced build settings" option so that you can add the required Environment variable called `DEVTO` with the value being your DEV API key
 
 From there, the rest of the build settings will pick up from the included `netlify.toml` file.
 
