@@ -11,7 +11,7 @@ The only requirements are:
 
 ## Getting Started
 
-1. Fork this project into your own Github repo
+1. Choose the "Use this template" option to copy to your own repo
 2. On DEV, go to [Account Settings](https://dev.to/settings/account) and generate an API key - _keep this tab open for reference in a later step_
 3. [Login or signup for Netlify](https://www.netlify.com/) and create a new site from the new repo
 
