@@ -10,10 +10,10 @@
 //   }
 // }
 
-$ink-colors: (primary, text, gray);
+$ink-colors: primary, text, gray;
 
 @each $key in $ink-colors {
   .ink-#{$key} {
-    color: theme-color($key);
+    color: theme-color(#{$key});
   }
 }
