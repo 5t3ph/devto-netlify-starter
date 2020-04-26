@@ -1,6 +1,6 @@
 const postList = document.querySelector(".posts");
 
-function createPostList(posts) {
+const createPostList = (posts) => {
   const items = posts.map((post) => {
     const { title, url, description, tags } = post;
     return `<li class="card">

@@ -6,7 +6,7 @@ $theme-colors: map-merge(
   $brand-colors,
   (
     "background": #f8f8f8,
-    "ink": #767676,
+    "text": #767676,
     "light": #f9f9f9,
     "dark": #162310,
     "gray": #6a7397,
@@ -17,7 +17,7 @@ $theme-colors: map-merge(
   @return map-get($theme-colors, $key);
 }
 
-$body-color: theme-color(ink) !default;
+$body-color: theme-color(text) !default;
 $link-color: theme-color(primary) !default;
 $border-radius: 8px !default;
 
