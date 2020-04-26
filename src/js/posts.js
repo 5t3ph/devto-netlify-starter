@@ -7,7 +7,7 @@ const createPostList = (posts) => {
 					<div class="card__content">
             <a href="${url}" class="card__title h4">${title}</a>
             <p>${description}</p>
-						<span class="ink-gray"><em>${tags}</em></span>
+						<em class="ink-gray">${tags}</em>
           </div>
         </div>
       </li>`;
